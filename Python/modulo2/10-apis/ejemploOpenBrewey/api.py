@@ -16,7 +16,7 @@ base_url = os.getenv("API_KEY")
 if not base_url:
     raise ValueError("La clave API no se encuentra en el archivo .env")
 
-# Función para manejar llamadas a la API con manejo de errores
+# Función para manejar llamadas a la API con manejo de errores 
 def llamada_api(url):
     try:
         response = requests.get(url)
